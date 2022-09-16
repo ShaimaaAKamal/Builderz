@@ -1,0 +1,36 @@
+:root{
+    --siteColor:#FDBD33;
+    --siteDark:#030F27;
+}
+.text-site{
+    color:var(--siteColor);
+}
+.text-dSite{
+    color:var(--siteDark);
+}
+.bg-site{
+    background-color: var(--siteColor);
+}
+.bg-dSite{
+      background-color: var(--siteDark);
+}
+.fa-rotate-5{
+    transform: rotate(-15deg);
+}
+
+.navbar {
+    --bs-navbar-padding-x: .5rem;
+    --bs-navbar-padding-y: 1.5rem;
+    margin:0 -12px
+}
+
+.navbar-nav .nav-link.active{
+    color:var(--siteColor) !important;
+}
+
+@media screen and (min-width:992px) {
+    .navbar {
+        margin:0;
+    }
+    
+}
