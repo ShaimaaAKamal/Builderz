@@ -112,6 +112,41 @@ a{
     z-index:3;
 }
 
+
+.SpexIcon::before{
+     content:"";
+     width:80px;
+     height:80px;
+     border-radius: 70px;
+     border:1px dotted #fff;
+     position: absolute;
+     box-shadow: 0 0 2px  var(--siteColor) inset;
+     top:-45%;
+     left:-13%;
+     z-index:1;
+     padding:2rem;
+}
+
+.SpexIcon::after{
+    padding:2rem;
+    content:"";
+    width:79px;
+    height:79px;
+    border-radius: 70px;
+    position: absolute;
+    background-color: #030F27;
+    top: -18%;
+    left: 6%; 
+    z-index:2;
+}
+.building::after{
+    background-color: var(--siteColor);
+}
+
+.SpexIcon i {
+    position: relative;
+    z-index:3
+}
 @media screen and (min-width:992px) {
     .navbar {
         margin:0;
