@@ -2,6 +2,10 @@
     --siteColor:#FDBD33;
     --siteDark:#030F27;
 }
+
+body{
+    background-color: #DDDDDD;
+}
 .text-site{
     color:var(--siteColor);
 }
@@ -27,10 +31,45 @@
 .navbar-nav .nav-link.active{
     color:var(--siteColor) !important;
 }
+.listLoadEffect,.linkLoadEffect,.menuLoadEffect{
+    animation-duration: 1s;
+    animation-fill-mode: forwards;     
+}
+.listLoadEffect{
+    animation-name: listLoadEffect;
+    transform: translateX(-110%);
+}
+
+.linkLoadEffect{
+    animation-name: listLoadEffect;
+    transform: translateX(100%);
+}
+.menuLoadEffect{
+    animation-name: menuLoadEffect;
+    transform: scale(.7);
+}
+
+
+
 
 @media screen and (min-width:992px) {
     .navbar {
         margin:0;
+        animation-name: loadEffect;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
     }
+
+  
+    
+    
+}
+
+
+
+@media screen and (min-width:1365px) {
+   .parent{
+    width:90%;
+   }
     
 }
