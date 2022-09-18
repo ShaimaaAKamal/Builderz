@@ -63,12 +63,24 @@ a{
 
 
 /* Home Section */
-#Home{
-    height:100vh;
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url("../img/carousel-1.jpg");
+.homeCarsouel{
     background-position: center center  ;
     background-size: cover;
 }
+
+.homeCarsouel1{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url("../img/carousel-1.jpg");
+} 
+
+.homeCarsouel2{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url("../img/carousel-2.jpg");
+} 
+
+.homeCarsouel3{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , url("../img/carousel-3.jpg");
+} 
+
+
 
 #Home p {
    transform: translateX(70%);
