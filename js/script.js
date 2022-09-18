@@ -1,5 +1,6 @@
-let header=document.querySelector("header")
-let nav=document.querySelector("header nav")
+let header=document.querySelector("header");
+let homeCarsoul=document.querySelectorAll("homeCarsouel")
+let nav=document.querySelector("header nav");
 let navOffset=nav.offsetTop;
 
 

@@ -67,6 +67,11 @@ a{
 .homeCarsouel{
     background-position: center -20%  ;
     background-size: cover;
+    height:80vh;
+}
+
+.HomeHeight{
+    height:100vh;
 }
 
 .homeCarsouel1{
@@ -96,7 +101,7 @@ a{
 }
 
 #Home .carousel-item{
-   transition-duration: .1s !important;
+   transition-duration: .2s !important;
 } 
 
 .widthInherit{
