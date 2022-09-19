@@ -30,3 +30,32 @@
       margin:0 48px;
     }
   }
+
+  @keyframes iconAnimation {
+
+    0%{      
+         padding:0rem;
+         background-color: #fdbd3376;
+    }
+    15%{
+        padding:.3rem;
+        background-color: #fdbd3376;
+    }
+    25%{
+        padding:.5rem;
+        background-color: #fdbd3376;
+    }
+   75%{
+    padding:.8rem;
+    background-color: #fdbd3376;
+}
+85%{
+    padding:1rem;
+    background-color: #fdbd3376;
+}
+100%{
+    padding :1.2rem;
+    background-color: #fdbd3376;
+}
+    
+}
