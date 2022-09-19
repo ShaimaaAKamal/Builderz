@@ -4,6 +4,11 @@
     --siteGray:#666666;
 }
 
+/* .typed-cursor.typed-cursor--blink{
+    display: none !important;
+    animation: none !important;
+} */
+
 body{
     background-color: #DDDDDD;
 }
@@ -121,13 +126,25 @@ a{
     z-index:3;
 }
 
-.Spex,.about{
+.Spex{
     transform: translateY(40%);
     animation-name: listLoadEffect ;
 }
 
 .aboutWidth{
     width:95%;
+    transform: translateY(100%);
+    animation-name: listLoadEffect ;
+}
+
+.statusLeft{
+    transform: translateX(-200%) ; 
+    animation-name:listLoadEffect ;
+}
+
+.statusRight{
+    transform: translateX(200%);
+    animation-name:listLoadEffect ;
 }
 
 
