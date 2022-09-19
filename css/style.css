@@ -1,6 +1,7 @@
 :root{
     --siteColor:#FDBD33;
     --siteDark:#030F27;
+    --siteGray:#666666;
 }
 
 body{
@@ -11,6 +12,9 @@ body{
 }
 .text-dSite{
     color:var(--siteDark);
+}
+.text-gray{
+    color:var(--siteGray);
 }
 .bg-site{
     background-color: var(--siteColor);
@@ -26,6 +30,11 @@ body{
     background-color: var(--siteColor);
     color:var(--siteDark)  !important;
     border-color: var(--siteColor) !important;
+}
+.LinkDarkHover:hover{
+    background-color: var(--siteDark);
+    color:var(--siteColor)  !important;
+    border-color: var(--siteDark) !important;
 }
 
 a{
@@ -112,13 +121,26 @@ a{
     z-index:3;
 }
 
-.Spex{
+.Spex,.about{
     transform: translateY(40%);
     animation-name: listLoadEffect ;
-  
+}
+
+.aboutWidth{
+    width:95%;
 }
 
 
+@media screen and (min-width:576px){
+    .aboutWidth{
+        width:80%;
+    }
+}
+@media screen and (min-width:768px){
+    .aboutWidth{
+        width:87%;
+    }
+}
 
 @media screen and (min-width:992px) {
     .navbar {
@@ -127,7 +149,10 @@ a{
         animation-duration: 1s;
         animation-fill-mode: forwards;
     }  
-
+    
+    .aboutWidth{
+        width:90%;
+    }
 
 }
 
@@ -141,6 +166,9 @@ a{
    .widthInherit{
     width: 90%;
     left:5%;
+}
+.aboutWidth{
+    width:80%;
 }
     
 }
