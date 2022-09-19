@@ -131,10 +131,16 @@ a{
     animation-name: listLoadEffect ;
 }
 
+/* About Section */
+
 .aboutWidth{
     width:95%;
     transform: translateY(100%);
     animation-name: listLoadEffect ;
+}
+
+.innerWidth{
+    width:95%;
 }
 
 .statusLeft{
@@ -147,14 +153,56 @@ a{
     animation-name:listLoadEffect ;
 }
 
+/* Service Section */
+
+
+.serviceCard{
+    transform: translateY(100%);
+    animation-name: listLoadEffect ;
+}
+.serviceInfo{
+    opacity:0;
+}
+.serviceIcon i{
+    color:var(--siteDark);
+}
+
+.serviceCard:hover  .serviceIcon i{
+    color:#fff !important;
+}
+
+.serviceCard:hover .serviceInfo{
+    opacity:1;
+}
+
+.card2{
+    animation-delay: .1s;
+}
+.card3{
+    animation-delay: .2s;
+}
+
+.card4{
+    animation-delay: .3s;
+}
+
+.card5{
+    animation-delay: .4s;
+}
+
+.card6{
+    animation-delay: .5s;
+}
+
+
 
 @media screen and (min-width:576px){
-    .aboutWidth{
+    .aboutWidth,.innerWidth{
         width:80%;
     }
 }
 @media screen and (min-width:768px){
-    .aboutWidth{
+    .aboutWidth,.innerWidth{
         width:87%;
     }
 }
@@ -167,7 +215,7 @@ a{
         animation-fill-mode: forwards;
     }  
     
-    .aboutWidth{
+    .aboutWidth,.innerWidth{
         width:90%;
     }
 
@@ -184,7 +232,7 @@ a{
     width: 90%;
     left:5%;
 }
-.aboutWidth{
+.aboutWidth,.innerWidth{
     width:80%;
 }
     
