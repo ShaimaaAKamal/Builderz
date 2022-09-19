@@ -319,6 +319,25 @@ a{
     animation-delay: .5s;
 }
 
+.bg-blog{
+    background-color: #F4F6FF;
+}
+
+.blog a:hover{
+    color:var(--siteColor)  !important;
+}
+.blog .title::after{
+    content:"";
+    width:30%;
+    transform: translateX(-50%);
+    position: absolute;
+    left:50%;
+    height: 1px;
+    background-color: var(--siteColor);
+    bottom:-.2rem;
+
+}
+
 
 
 
