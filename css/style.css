@@ -338,6 +338,40 @@ a{
 
 }
 
+footer{
+    z-index: 2;
+}
+
+.fa-ul{
+    margin-left: 1.9rem;
+}
+.footLink > span:last-of-type{
+    transition: all 1s;
+    display: inline-block;
+}
+.footLink:hover{
+    color:var(--siteColor) !important;
+}
+.footLink:hover > span:last-of-type{
+    transform: scale(1.1);
+    margin-left:.5rem;
+}
+.footerTitle::after{
+   content:"";
+   width:80px;
+   height: 2px;
+   background-color: var(--siteColor);
+   position: absolute;
+   bottom:-.6rem;
+   left:0
+}
+
+.footerBorder{
+    border-color:#1C273D !important;
+}
+.terms a:hover{
+    color:var(--siteColor)!important;
+}
 
 
 
