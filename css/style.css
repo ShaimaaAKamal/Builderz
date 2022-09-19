@@ -1,13 +1,12 @@
+@import url("https://use.fontawesome.com/releases/v5.15.0/css/all.css");
+
 :root{
     --siteColor:#FDBD33;
     --siteDark:#030F27;
     --siteGray:#666666;
 }
 
-/* .typed-cursor.typed-cursor--blink{
-    display: none !important;
-    animation: none !important;
-} */
+
 
 body{
     background-color: #DDDDDD;
@@ -29,6 +28,9 @@ body{
 }
 .fa-rotate-5{
     transform: rotate(-15deg);
+}
+.border-gray{
+    border-color: #E4E5E5;
 }
 
 .linkHover:hover{
@@ -215,6 +217,10 @@ a{
     animation-iteration-count: infinite;
     padding :1.2rem;
 }
+.videoPlay{
+    width:80px;
+    height: 80px;
+}
 
 .fbColor{
     background-color:#1A77F2;
@@ -263,7 +269,55 @@ a{
   transform: scale(1.15);
 }
 
+.accordion-button:not(.collapsed)::after {
+  content: "\f057";
+  font-family: "Font Awesome 5 Free";
+  color: var(--siteDark);
+  background-image: none;
+}
 
+.accordion-button.collapsed::after {
+    content: "\f058";
+    color: var(--siteColor);
+    font-weight: 400;
+    font-family: "Font Awesome 5 Free";
+    background-image: none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: var(--siteDark);
+    background-color: var(--siteColor);
+    border:none;
+    box-shadow: none;
+    /* box-shadow: inset 0 calc(var(--bs-accordion-border-width) * -1) 0 var(--siteColor); */
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+   }
+
+.questionLeft{
+    transform: translateX(-150%);
+    animation-name: listLoadEffect;
+}
+.questionRight{
+    transform: translateX(150%);
+    animation-name: listLoadEffect;
+}
+#question2,#question7{
+    animation-delay: .2s;
+}
+#question3,#question8{
+    animation-delay: .3s;
+}
+
+#question4,#question9{
+    animation-delay: .4s;
+}
+
+#question5,#question10{
+    animation-delay: .5s;
+}
 
 
 
@@ -276,6 +330,9 @@ a{
 @media screen and (min-width:768px){
     .aboutWidth,.innerWidth{
         width:87%;
+    }
+    .qtn-border{
+        border-right:1px solid var(--siteColor)
     }
 }
 
