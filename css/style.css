@@ -373,6 +373,23 @@ footer{
     color:var(--siteColor)!important;
 }
 
+#About{
+    height: 38vh;
+}
+#About a:hover{
+    color:#fff !important;
+}
+.mainTitle::after{
+    content:"";
+    background-color: var(--siteDark);
+    width:100px;
+    left:50%;
+    transform: translateX(-50%);
+    height:3px;
+    position: absolute;
+    bottom:0;
+}
+
 
 
 @media screen and (min-width:576px){
