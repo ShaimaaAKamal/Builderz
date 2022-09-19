@@ -156,6 +156,8 @@ a{
 /* Service Section */
 
 
+
+
 .serviceCard,.teamCard{
     transform: translateY(112%);
     animation-name: listLoadEffect ;
