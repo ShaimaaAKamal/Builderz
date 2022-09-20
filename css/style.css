@@ -7,7 +7,10 @@
 }
 
 
-
+.m-0{
+   margin-left:0;
+   margin-right:0; 
+}
 body{
     background-color: #DDDDDD;
 }
@@ -340,7 +343,7 @@ a{
     background-color: #F4F6FF;
 }
 
-.blog a:hover{
+.blog a:hover,.Recent:hover{
     color:var(--siteColor)  !important;
 }
 .blog .title::after{
@@ -354,6 +357,7 @@ a{
     bottom:-.2rem;
 
 }
+
 
 footer{
     z-index: 2;
@@ -434,7 +438,25 @@ footer{
     border-color:none;
 }
 
+.authorImage{
+    min-width: 120px;
+}
 
+.carousel-control-prev,.carousel-control-next{
+    width:auto ;
+    height: auto;
+}
+
+.imageWidth{
+    width:100px;
+}
+
+.sideImage img{
+    transition: all 1s;
+}
+.sideImage:hover img{
+    transform: scale(1.1);
+}
 @media screen and (min-width:576px){
     .aboutWidth,.innerWidth{
         width:80%;
