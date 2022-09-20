@@ -33,12 +33,16 @@ body{
     border-color: #E4E5E5;
 }
 
+.border-site{
+    border-color: var(--siteColor) !important;
+}
+
 .linkHover:hover{
     background-color: var(--siteColor);
     color:var(--siteDark)  !important;
     border-color: var(--siteColor) !important;
 }
-.LinkDarkHover:hover{
+.LinkDarkHover:hover,.pagi .active{
     background-color: var(--siteDark);
     color:var(--siteColor)  !important;
     border-color: var(--siteDark) !important;
@@ -56,6 +60,12 @@ a{
 
 .navbar-nav .nav-link.active{
     color:var(--siteColor) !important;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: var(--siteDark);
+    text-decoration: none;
+    background-color: var(--siteColor);
 }
 .animationEffect{
     animation-duration: 1s;
