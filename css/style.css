@@ -391,6 +391,32 @@ footer{
 }
 
 
+.nav-tabs {
+    --bs-nav-tabs-border-width: 0px;
+     --bs-nav-tabs-border-color: transparent;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--siteColor);
+    background-color: var(--siteDark);
+    border-color:none;
+}
+.nav-tabs .nav-link{
+    color: var(--siteDark);
+    background-color: var(--siteColor);
+    border-color:none;
+    border-radius: 0px;
+    margin-left:1rem;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.serviceCard:hover .project{
+    color:#fff !important;
+    background-color: var(--siteColor) !important;
+    border-color:none;
+}
+
 
 @media screen and (min-width:576px){
     .aboutWidth,.innerWidth{
