@@ -14,6 +14,9 @@
 body{
     background-color: #DDDDDD;
 }
+.text-dGray{
+    color:#666566;
+}
 .text-site{
     color:var(--siteColor);
 }
@@ -34,6 +37,10 @@ body{
 }
 .border-gray{
     border-color: #E4E5E5;
+}
+
+.fs-8{
+    font-size: .9rem;
 }
 
 .border-site{
@@ -343,7 +350,7 @@ a{
     background-color: #F4F6FF;
 }
 
-.blog a:hover,.Recent:hover{
+.blog a:hover,.Recent:hover .cat:hover{
     color:var(--siteColor)  !important;
 }
 .blog .title::after{
