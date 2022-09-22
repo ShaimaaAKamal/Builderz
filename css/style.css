@@ -140,6 +140,11 @@ a{
    transition-duration: .2s !important;
 } 
 
+.aside > *{
+    transform: translateY(50%);
+    animation-name: listLoadEffect;
+}
+
 .widthInherit{
     width:100%;
     margin: 0 !important;
@@ -362,7 +367,6 @@ a{
     height: 1px;
     background-color: var(--siteColor);
     bottom:-.2rem;
-
 }
 
 
@@ -384,7 +388,10 @@ footer{
     transform: scale(1.1);
     margin-left:.5rem;
 }
-.footerTitle::after{
+.side{
+    position: relative;
+}
+.footerTitle::after,.side::after{
    content:"";
    width:80px;
    height: 2px;
@@ -392,6 +399,11 @@ footer{
    position: absolute;
    bottom:-.6rem;
    left:0
+}
+.side::after{
+    width:60px;
+    bottom:-.3rem;
+
 }
 
 .footerBorder{
