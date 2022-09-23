@@ -14,6 +14,9 @@
 body{
     background-color: #DDDDDD;
 }
+.bg-form{
+    background-color: #F4F6FF;
+}
 .text-dGray{
     color:#666566;
 }
