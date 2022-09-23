@@ -143,7 +143,7 @@ a{
    transition-duration: .2s !important;
 } 
 
-.aside > *{
+.aside > * ,.leftSide > *{
     transform: translateY(50%);
     animation-name: listLoadEffect;
 }
