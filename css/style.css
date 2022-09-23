@@ -355,7 +355,7 @@ a{
     background-color: #F4F6FF;
 }
 
-.blog a:hover,.Recent:hover .cat:hover{
+.blog a:hover,.Recent:hover, .cat:hover,.terms a:hover {
     color:var(--siteColor)  !important;
 }
 .blog .title::after{
@@ -409,9 +409,7 @@ footer{
 .footerBorder{
     border-color:#1C273D !important;
 }
-.terms a:hover{
-    color:var(--siteColor)!important;
-}
+
 
 #About{
     height: 38vh;
@@ -476,6 +474,17 @@ footer{
 .sideImage:hover img{
     transform: scale(1.1);
 }
+
+.owl-item{
+    display: inline-block;
+    width:100%;
+}
+.owl-nav{
+    display: flex;
+    position: absolute;
+    top:0;
+    right:0;
+}
 @media screen and (min-width:576px){
     .aboutWidth,.innerWidth{
         width:80%;
@@ -488,6 +497,8 @@ footer{
     .qtn-border{
         border-right:1px solid var(--siteColor)
     }
+    .owl-item{
+        width:50%;
 }
 
 @media screen and (min-width:992px) {

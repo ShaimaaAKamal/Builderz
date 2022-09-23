@@ -51,3 +51,5 @@ var typed = new Typed('#typed',{
     showCursor: false,
     backDelay: 2
   });
+
+
