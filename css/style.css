@@ -11,6 +11,9 @@
    margin-left:0;
    margin-right:0; 
 }
+.border-7{
+    border-width: .5px;
+}
 body{
     background-color: #DDDDDD;
 }
@@ -487,6 +490,10 @@ footer{
     position: absolute;
     top:0;
     right:0;
+}
+
+.contactForm input::placeholder , .contactForm textarea::placeholder{
+      color:#fff !important; 
 }
 @media screen and (min-width:576px){
     .aboutWidth,.innerWidth{
